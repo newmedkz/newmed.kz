@@ -1,0 +1,54 @@
+<template>
+  <div :class="$style['left-panel']">
+    <img src="public/logo.svg" alt="Логотип">
+    <nav :class="$style.nav">
+      <ul :class="$style.list">
+        <li><a href="/" :class="$style.link">Главная</a></li>
+        <li :class="$style.item"><a>О компании</a></li>
+        <li :class="$style.item"><a>Наши проекты</a></li>
+        <li :class="$style.item"><a>Команда</a></li>
+      </ul>
+    </nav>
+    <p :class="$style.info">ИНН 7710641442; ОГРН 5067746338732; адрес: РФ, 123056, г. Москва, Грузинский пер., д 3А.</p>
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style module>
+.left-panel {
+  max-width: 275px;
+  padding-top: 46px;
+}
+
+.nav {
+  width: max-content;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  margin-top: 70px;
+  font-size: 20px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.item {
+  color: #919199;
+}
+
+.link {
+  color: #111114;
+  text-decoration: none;
+}
+
+.info {
+  color: #CCCCCC;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 271px;
+}
+</style>
