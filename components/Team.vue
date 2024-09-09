@@ -17,9 +17,9 @@
 const list = [
   {id: '/1.png', name: 'Пилипчук Александр', position: 'Ген. директор'},
   {id: '/2.jpg', name: 'Георгий Лондаридзе', position: 'CTO'},
-  {id: '/33.png', name: 'Владислав Торгов', position: 'Architect'},
-  {id: '/44.png', name: 'Алёна Лопухова', position: 'CPO'},
-  {id: '/55.png', name: 'Полина Фурманова', position: 'Delivery Lead'},
+  {id: '/3.png', name: 'Владислав Торгов', position: 'Architect'},
+  {id: '/4.png', name: 'Алёна Лопухова', position: 'CPO'},
+  {id: '/5.png', name: 'Полина Фурманова', position: 'Delivery Lead'},
 ];
 </script>
 
@@ -39,6 +39,7 @@ const list = [
   font-size: 60px;
   line-height: 66px;
   margin-bottom: 33px;
+  font-weight: 400;
 }
 
 .list {

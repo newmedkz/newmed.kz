@@ -46,8 +46,11 @@ input, button {
   padding: 24px 24px 60px 60px;
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: space-between;
   }
 }

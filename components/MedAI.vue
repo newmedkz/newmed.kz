@@ -20,6 +20,9 @@
 </template>
 
 <style module>
+
+
+
 .medAI {
   position: relative;
   border-radius: 40px;
@@ -30,6 +33,9 @@
   font-weight: 500;
   line-height: 24px;
   color: #111114;
+  @media screen and (max-width: 768px) {
+    padding: 30px 16px;
+  }
 }
 
 .medAI::before {
@@ -41,6 +47,10 @@
   position: absolute;
   background-repeat: no-repeat;
   background-image: url('/public/cards.png');
+
+  @media screen and (max-width: 768px) {
+    left: 0 !important;
+  }
 }
 
 .heading {
@@ -48,10 +58,17 @@
   line-height: 66px;
   color: #7A62DB;
   margin-bottom: 15px;
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
 }
 
 .text {
   margin-bottom: 69px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .list {
@@ -59,6 +76,9 @@
   gap: 16px;
   flex-direction: column;
   max-width: 490px;
+  @media screen and (max-width: 768px) {
+    gap: 18px;
+  }
 }
 
 .item {
@@ -75,6 +95,9 @@
   position: absolute;
   background-repeat: no-repeat;
   background-image: url('/star.svg');
+  @media screen and (max-width: 768px) {
+    top: 4% !important;
+  }
 }
 </style>
 <script setup lang="ts">

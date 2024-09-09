@@ -3,7 +3,7 @@
     <div :class="$style.block">
       <h1 :class="$style.heading">Меняем подход к&nbsp;медицине</h1>
       <p :class="$style.text">Разрабатываем приложения для профилактики заболеваний и улучшения качества жизни</p>
-      <div :class="$style.select">
+      <div :class="$style.search">
         <input placeholder="Ваш e-mail" />
         <button :class="$style.button">Подписаться</button>
       </div>
@@ -19,36 +19,56 @@
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .block {
   padding: 50px 60px;
   background-color: #F5F5F8;
   border-radius: 40px;
+  @media screen and (max-width: 768px) {
+    padding: 30px 16px;
+  }
 }
 
 .heading {
   font-size: 96px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 96px;
   margin-bottom: 34px;
   max-width: 300px;
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
+    line-height: 120%;
+    margin-bottom: 19px;
+  }
 }
 
 .img {
   height: 760px;
   border-radius: 40px;
+  @media screen and (max-width: 768px) {
+    max-width: 343px;
+    max-height: 400px;
+    border-radius: 21px;
+  }
 }
 
 .text {
   color: #73737A;
   font-size: 20px;
-  font-weight: 500;
   line-height: 28px;
   max-width: 80%;
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    max-width: 100%;
+  }
 }
 
-.select {
+.search {
   background-color: #FFF;
   border-radius: 60px;
   margin: 119px 0 16px 0;
@@ -62,16 +82,29 @@
     font-size: 24px;
     width: 100%;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 66px 0 16px 0;
+    input {
+      padding: 18px 20px;
+      font-size: 16px;
+    }
+  }
 }
 
 .button {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 22px;
   color: #fff;
   border-radius: 60px;
   background: #111114;
   padding: 23px 36px;
   margin: 8px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    padding: 14px 25px;
+    margin: 4px;
+  }
 }
 </style>

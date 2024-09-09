@@ -30,6 +30,9 @@
 
 .nav {
   width: max-content;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .list {
