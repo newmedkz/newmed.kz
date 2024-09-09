@@ -22,7 +22,9 @@
 .left-panel {
   max-width: 275px;
   padding-top: 30px;
-  //position: sticky;
+  position: sticky;
+  top: 0;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
