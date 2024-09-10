@@ -32,7 +32,6 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-  color: #111114;
   @media screen and (max-width: 768px) {
     padding: 30px 16px;
     border-radius: 32px;
@@ -50,11 +49,21 @@
   background-image: url('/public/cards.png');
 }
 
+@media screen and (max-width: 1440px) {
+  .medAI::before {
+    left: 25%;
+    background-size: 53%;
+    background-position: center top;
+    top: 12%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .medAI::before {
     left: 0;
     background-size: contain;
     background-position: center 75.5%;
+    top: -8%;
   }
 }
 

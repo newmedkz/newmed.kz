@@ -30,7 +30,6 @@ const list = [
   width: 100%;
   font-size: 20px;
   line-height: 24px;
-  color: #111114;
   border: 1.5px solid #DCDCE5;
   @media screen and (max-width: 768px) {
     padding: 30px 16px 16px 16px;

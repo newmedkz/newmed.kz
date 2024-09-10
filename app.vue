@@ -23,7 +23,7 @@ body {
   font-family: 'Manrope', 'MTSSans', BlinkMacSystemFont, 'Roboto', 'Segoe UI',
   'Helvetica Neue', Arial, sans-serif;
   color: #111114;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
@@ -47,7 +47,7 @@ input, button {
 
 .container {
   max-width: 1920px;
-  padding: 24px 24px 60px 60px;
+  padding: 24px 24px 60px 24px;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -66,6 +66,9 @@ input, button {
   flex-direction: column;
   align-items: end;
   gap: 40px;
+  @media screen and (max-width: 1440px) {
+    max-width: 1100px;
+  }
   @media screen and (max-width: 768px) {
     max-width: 343px;
     gap: 20px;

@@ -28,7 +28,7 @@
   padding-bottom: 165px;
   border-bottom: 1px solid #73737A;
   margin-bottom: 42px;
-  background-position: 73px -14px;
+  background-position: center -14px;
   background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     font-size: 38px;

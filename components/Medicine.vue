@@ -10,7 +10,7 @@
       <p :class="$style.text">Узнайте первыми о наших&nbsp;новостях и&nbsp;запусках&nbsp;приложений</p>
     </div>
 
-    <img :class="$style.img" src="/public/mobile.png" alt="альтернативный текст">
+    <img :class="$style.img" src="/public/mobile.png" alt="Картинка мобильного телефона">
   </div>
 </template>
 
@@ -40,6 +40,10 @@
   line-height: 96px;
   margin-bottom: 34px;
   max-width: 300px;
+  @media screen and (max-width: 1440px) {
+    font-size: 80px;
+    line-height: 80px;
+  }
   @media screen and (max-width: 768px) {
     font-size: 38px;
     line-height: 120%;
@@ -50,9 +54,14 @@
 .img {
   height: 760px;
   border-radius: 40px;
+  @media screen and (max-width: 1440px) {
+    width: 50%;
+    max-height: 700px;
+  }
   @media screen and (max-width: 768px) {
     max-height: 400px;
     border-radius: 21px;
+    width: 100%;
   }
 }
 
@@ -61,9 +70,11 @@
   font-size: 20px;
   line-height: 28px;
   max-width: 80%;
+  @media screen and (max-width: 1440px) {
+    max-width: 100%;
+  }
   @media screen and (max-width: 768px) {
     font-size: 18px;
-    max-width: 100%;
     line-height: 25px;
   }
 }
@@ -81,6 +92,10 @@
     border-radius: 60px;
     font-size: 24px;
     width: 100%;
+  }
+
+  @media screen and (max-width: 1440px) {
+    margin: 66px 0 16px 0;
   }
 
   @media screen and (max-width: 768px) {
