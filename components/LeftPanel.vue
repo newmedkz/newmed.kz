@@ -24,7 +24,7 @@
   padding-top: 30px;
   position: sticky;
   top: 0;
-  height: 99vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
