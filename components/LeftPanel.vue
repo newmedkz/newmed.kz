@@ -11,7 +11,7 @@
       </ul>
     </nav>
     </div>
-    <p :class="$style.info">ИНН 7710641442; ОГРН 5067746338732; адрес: РФ, 123056, г. Москва, Грузинский пер., д 3А.</p>
+    <p :class="$style.info">ИНН 231240027989; ОГРН&nbsp;231240027989; адрес:&nbsp;Казахстан, город Алматы, Медеуский район, улица Зенкова, дом 32, кв. 1, почтовый индекс 050000</p>
   </div>
 </template>
 
@@ -61,8 +61,6 @@
 
 .info {
   color: #CCCCCC;
-  font-size: 16px;
-  padding: 24px 36px 0 0;
   @media screen and (max-width: 768px) {
     display: none;
   }

@@ -6,7 +6,7 @@
       <services />
       <med-a-i />
       <team />
-      <p :class="$style.info">ИНН 7710641442; ОГРН 5067746338732; адрес: РФ, 123056, г. Москва,<br/> Грузинский пер., д 3А.</p>
+      <p :class="$style.info">ИНН 231240027989; ОГРН&nbsp;231240027989; адрес:&nbsp;Казахстан, город Алматы, Медеуский район, улица Зенкова, дом 32, кв. 1, почтовый индекс 050000</p>
     </div>
   </div>
 </template>
@@ -74,8 +74,6 @@ input, button {
 
 .info {
   color: #CCCCCC;
-  font-size: 16px;
-  margin: 4px 25px 0 0;
   @media screen and (min-width: 768px) {
     display: none;
   }
