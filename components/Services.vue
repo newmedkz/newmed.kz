@@ -15,13 +15,13 @@
   padding: 60px;
   width: 100%;
   @media screen and (max-width: 768px) {
-    padding: 30px 16px;
+    padding: 32px 16px 26px 16px;
+    border-radius: 32px;
   }
 }
 
 .heading {
   font-size: 60px;
-  font-weight: 400;
   line-height: 66px;
   color: #fff;
   background-image: url('/public/services.png');
@@ -34,9 +34,10 @@
     font-size: 38px;
     background-image: url('/public/services2.png');
     background-position: bottom center;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     background-size: 100%;
     padding-bottom: 112px;
+    line-height: 46px;
   }
 }
 
@@ -57,7 +58,7 @@
   max-width: 430px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
-    font-weight: 400;
+    line-height: 22px;
   }
 }
 </style>

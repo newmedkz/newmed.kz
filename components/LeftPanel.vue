@@ -1,7 +1,7 @@
 <template>
   <div :class="$style['left-panel']">
     <div>
-    <img src="public/logo.svg" alt="Логотип">
+    <img :class="$style.img" src="public/logo.svg" alt="Логотип">
     <nav :class="$style.nav">
       <ul :class="$style.list">
         <li><a href="/" :class="$style.link">Главная</a></li>
@@ -28,6 +28,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    position: static;
+    margin-bottom: 13px;
+  }
 }
 
 .nav {
@@ -43,7 +48,6 @@
   gap: 31px;
   margin-top: 70px;
   font-size: 20px;
-  font-weight: 500;
 }
 
 .item {
@@ -58,6 +62,15 @@
 .info {
   color: #CCCCCC;
   font-size: 16px;
-  font-weight: 500;
+  padding: 24px 36px 0 0;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.img {
+  @media screen and (max-width: 768px) {
+    width: 163px;
+  }
 }
 </style>

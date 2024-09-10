@@ -7,7 +7,7 @@
         <input placeholder="Ваш e-mail" />
         <button :class="$style.button">Подписаться</button>
       </div>
-      <p :class="$style.text">Узнайте первыми о наших&nbsp;новостях<br/>и запусках приложений</p>
+      <p :class="$style.text">Узнайте первыми о наших&nbsp;новостях и&nbsp;запусках&nbsp;приложений</p>
     </div>
 
     <img :class="$style.img" src="/public/mobile.png" alt="альтернативный текст">
@@ -31,12 +31,12 @@
   border-radius: 40px;
   @media screen and (max-width: 768px) {
     padding: 30px 16px;
+    border-radius: 32px;
   }
 }
 
 .heading {
   font-size: 96px;
-  font-weight: 400;
   line-height: 96px;
   margin-bottom: 34px;
   max-width: 300px;
@@ -51,7 +51,6 @@
   height: 760px;
   border-radius: 40px;
   @media screen and (max-width: 768px) {
-    max-width: 343px;
     max-height: 400px;
     border-radius: 21px;
   }
@@ -65,6 +64,7 @@
   @media screen and (max-width: 768px) {
     font-size: 18px;
     max-width: 100%;
+    line-height: 25px;
   }
 }
 
@@ -103,8 +103,9 @@
   margin: 8px;
   @media screen and (max-width: 768px) {
     font-size: 16px;
-    padding: 14px 25px;
+    padding: 13px 25px;
     margin: 4px;
+    line-height: 17px;
   }
 }
 </style>

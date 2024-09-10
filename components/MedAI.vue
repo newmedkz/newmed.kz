@@ -35,6 +35,7 @@
   color: #111114;
   @media screen and (max-width: 768px) {
     padding: 30px 16px;
+    border-radius: 32px;
   }
 }
 
@@ -47,9 +48,13 @@
   position: absolute;
   background-repeat: no-repeat;
   background-image: url('/public/cards.png');
+}
 
-  @media screen and (max-width: 768px) {
-    left: 0 !important;
+@media screen and (max-width: 768px) {
+  .medAI::before {
+    left: 0;
+    background-size: contain;
+    background-position: center 75.5%;
   }
 }
 
@@ -60,7 +65,8 @@
   margin-bottom: 15px;
   @media screen and (max-width: 768px) {
     font-size: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    line-height: 46px;
   }
 }
 
@@ -78,12 +84,17 @@
   max-width: 490px;
   @media screen and (max-width: 768px) {
     gap: 18px;
+    margin-bottom: 230px;
   }
 }
 
 .item {
   position: relative;
   padding-left: 39px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .item::before {
@@ -91,13 +102,9 @@
   width: 100%;
   height: 100%;
   left: 0;
-  top: -6%;
   position: absolute;
   background-repeat: no-repeat;
   background-image: url('/star.svg');
-  @media screen and (max-width: 768px) {
-    top: 4% !important;
-  }
 }
 </style>
 <script setup lang="ts">

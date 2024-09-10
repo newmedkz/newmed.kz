@@ -6,6 +6,7 @@
       <services />
       <med-a-i />
       <team />
+      <p :class="$style.info">ИНН 7710641442; ОГРН 5067746338732; адрес: РФ, 123056, г. Москва,<br/> Грузинский пер., д 3А.</p>
     </div>
   </div>
 </template>
@@ -23,11 +24,14 @@ body {
   'Helvetica Neue', Arial, sans-serif;
   color: #111114;
   margin: 0;
-
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 p, h1, ul, h3 {
@@ -47,11 +51,11 @@ input, button {
   margin: 0 auto;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-  }
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
+    padding: 8px 16px 70px 16px;
+    max-width: 375px;
   }
 }
 
@@ -62,6 +66,19 @@ input, button {
   flex-direction: column;
   align-items: end;
   gap: 40px;
+  @media screen and (max-width: 768px) {
+    max-width: 343px;
+    gap: 20px;
+  }
+}
+
+.info {
+  color: #CCCCCC;
+  font-size: 16px;
+  margin: 4px 25px 0 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 </style>

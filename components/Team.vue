@@ -29,22 +29,34 @@ const list = [
   padding: 50px 60px;
   width: 100%;
   font-size: 20px;
-  font-weight: 500;
   line-height: 24px;
   color: #111114;
   border: 1.5px solid #DCDCE5;
+  @media screen and (max-width: 768px) {
+    padding: 30px 16px 16px 16px;
+    border-width: 1px;
+    border-radius: 32px;
+  }
 }
 
 .heading {
   font-size: 60px;
   line-height: 66px;
   margin-bottom: 33px;
-  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    font-size: 38px;
+    line-height: 45.6px;
+    margin-bottom: 16px;
+  }
 }
 
 .list {
   display: flex;
   gap: 20px;
+  @media screen and (max-width: 768px) {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }
 
 .item {
@@ -58,6 +70,13 @@ const list = [
   justify-content: end;
   background-repeat: no-repeat;
   background-position: top center;
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    padding: 0 15px 18px 15px;
+    height: 182px;
+    background-size: contain;
+    border-radius: 19px;
+  }
 }
 
 
@@ -66,10 +85,20 @@ const list = [
   line-height: 31.2px;
   margin-bottom: 8px;
   max-width: 80%;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 2px;
+    max-width: 100%;
+    line-height: 20px;
+  }
 }
 
 .position {
   font-size: 16px;
   color: #73737A;
+  @media screen and (max-width: 768px) {
+  font-size: 12px;
+  line-height: 15px;
+  }
 }
 </style>
