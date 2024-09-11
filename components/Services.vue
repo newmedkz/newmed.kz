@@ -24,7 +24,7 @@
   font-size: 60px;
   line-height: 66px;
   color: #fff;
-  background-image: url('/public/services.png');
+  background-image: url('/public/services.svg');
   padding-bottom: 165px;
   border-bottom: 1px solid #73737A;
   margin-bottom: 42px;
@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
   @media screen and (max-width: 768px) {
     font-size: 38px;
-    background-image: url('/public/services2.png');
+    background-image: url('/public/services2.svg');
     background-position: bottom center;
     margin-bottom: 22px;
     background-size: 100%;
