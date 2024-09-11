@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.services">
+  <div :class="$style.services" id="services">
     <h3 :class="$style.heading">Кто мы такие?</h3>
     <div :class="$style.wrapper">
       <p :class="$style.text">Мы предлагаем передовые цифровые решения для отслеживания состояния здоровья. Наши продукты помогают следить за самочувствием и предотвращать риски развития заболеваний.</p>

@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.team">
+  <div :class="$style.team" id="team">
     <h3 :class="$style.heading">Команда</h3>
     <ul :class="$style.list">
       <li :class="$style.item" v-for="item in list" :key="item.id"

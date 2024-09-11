@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.medAI">
+  <div :class="$style.medAI" id="medAI">
     <h3 :class="$style.heading">Приложение MedAI</h3>
     <p :class="$style.text">Персональный помощник в снижении рисков заболеваний</p>
     <ul :class="$style.list">

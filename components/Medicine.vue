@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.medicine">
+  <div :class="$style.medicine" id="medicine">
     <div :class="$style.block">
       <h1 :class="$style.heading">Меняем подход к&nbsp;медицине</h1>
       <p :class="$style.text">Разрабатываем приложения для профилактики заболеваний и улучшения качества жизни</p>

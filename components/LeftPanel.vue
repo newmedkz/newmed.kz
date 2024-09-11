@@ -4,10 +4,10 @@
     <img :class="$style.img" src="public/logo.svg" alt="Логотип">
     <nav :class="$style.nav">
       <ul :class="$style.list">
-        <li><a href="/" :class="$style.link">Главная</a></li>
-        <li :class="$style.item"><a>О компании</a></li>
-        <li :class="$style.item"><a>Наши проекты</a></li>
-        <li :class="$style.item"><a>Команда</a></li>
+        <li><a href="#medicine" :class="$style.link">Главная</a></li>
+        <li><a href="#services" :class="$style.link">О компании</a></li>
+        <li><a href="#medAI" :class="$style.link">Наши проекты</a></li>
+        <li><a href="#team" :class="$style.link">Команда</a></li>
       </ul>
     </nav>
     </div>
@@ -50,13 +50,14 @@
   font-size: 20px;
 }
 
-.item {
-  color: #919199;
-}
 
 .link {
   color: #111114;
-  text-decoration: none;
+  transition: all ease .3s;
+}
+
+.link:hover {
+  color: #919199;
 }
 
 .info {

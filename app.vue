@@ -32,12 +32,17 @@ body {
 * {
   box-sizing: border-box;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 p, h1, ul, h3 {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 input, button {
