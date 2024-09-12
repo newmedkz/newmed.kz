@@ -83,6 +83,8 @@
 
 .text {
   margin-bottom: 69px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 768px) {
     display: none;
   }

@@ -40,10 +40,17 @@
   line-height: 96px;
   margin-bottom: 34px;
   max-width: 300px;
+
   @media screen and (max-width: 1440px) {
     font-size: 80px;
     line-height: 80px;
   }
+
+  @media screen and (max-width: 1360px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   @media screen and (max-width: 768px) {
     font-size: 38px;
     line-height: 120%;
@@ -98,7 +105,7 @@
     margin: 66px 0 16px 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1360px) {
     margin: 66px 0 16px 0;
     input {
       padding: 18px 20px;
@@ -116,7 +123,7 @@
   background: #111114;
   padding: 23px 36px;
   margin: 8px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1360px) {
     font-size: 16px;
     padding: 13px 25px;
     margin: 4px;
