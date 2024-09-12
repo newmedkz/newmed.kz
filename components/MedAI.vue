@@ -40,7 +40,7 @@
 
 .medAI::before {
   content: '';
-  width: 100%;
+  width: 800px;
   height: 130%;
   left: 44.7%;
   top: -8%;
@@ -51,10 +51,11 @@
 
 @media screen and (max-width: 1440px) {
   .medAI::before {
-    left: 25%;
-    background-size: 53%;
+    left: 50%;
+    background-size: 100%;
     background-position: center top;
     top: 12%;
+    width: 50%;
   }
 }
 
@@ -64,6 +65,7 @@
     background-size: contain;
     background-position: center 75.5%;
     top: -8%;
+    width: 100%;
   }
 }
 
