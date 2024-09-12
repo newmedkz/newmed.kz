@@ -51,10 +51,10 @@ const list = [
 
 .list {
   display: flex;
-  gap: 20px;
+  gap: 19px;
+  flex-wrap: wrap;
   @media screen and (max-width: 768px) {
     gap: 8px;
-    flex-wrap: wrap;
   }
 }
 
